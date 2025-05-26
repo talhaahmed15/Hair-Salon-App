@@ -18,13 +18,13 @@ class Account extends StatelessWidget {
           StreamProvider<List<Cart>?>.value(
               value: DatabaseService().cart, initialData: const [])
         ],
-        child: Scaffold(
+        child: const Scaffold(
           body: SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.all(10.0),
+              padding: EdgeInsets.all(10.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: const [
+                children: [
                   SizedBox(
                     height: 10,
                   ),
